@@ -7,7 +7,7 @@ class MaiorEMenor {
 	encontra(lista) {
 		lista.forEach( elem => {
 			if ( elem < this._menor ) this._menor = elem;
-			else if ( elem > this._maior ) this._maior = elem;
+			if ( elem > this._maior ) this._maior = elem;
 		});
 	}
 
